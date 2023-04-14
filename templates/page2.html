@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/style2.css">
+        <title>Hammy's form</title>
+    </head>
+    <body>
+        <header align="center">
+            <h1>!! WAIT !!</h1>
+        </header>
+
+        <div align="center">
+            <p>Hold your stinkin wheels there pal. If you want to find out more about Hammy you must answer a few questions</p>
+            <p>to see whether Hammy likes you. Please answer the questions below with 100% honesty.</p>
+            <form method="post">
+                What is your government name? <input name="name" />
+                <br/>
+                <br/>
+                Which email do you prefer to be contacted? <input email="email">
+                <br/>
+                <br/>
+                What is your favorite type of seed? <input answer1="answer1">
+                <br/>
+                <br/>
+                What is your fastest time walking forwards and backwards? <input answer2="answer2" />
+                <br/>
+                <br/>
+                What is your favorite thing to chew on? <input answer3="answer3" />
+                <br/>
+                <br/>
+                <button type="submit">Submit</button>
+            </form>
+            {% if name %}
+                <div class="content">
+                    <p>Thank you, {{ name }} !! Hammy will review your answers,</p>
+                    <p>and get back to you via email.</p>
+                    <img src="./static/hammy2.jpg" style="width:10%"></img>
+                    <br/>
+                    <br/>
+                    <p>Soon.</p>
+                </div>
+            {% endif %}
+        </div>
+        <footer align="">
+            <p>Click here if you're a wuss and chicken out:</p>
+            <a href="/"> Back to previous page</a>
+        </footer>
+    </body>
+</html>
